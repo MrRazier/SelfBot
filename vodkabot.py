@@ -9,9 +9,8 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 client = LineClient()
-#client._qrLogin("line://au/q/")
-client._tokenLogin("EmudSWcat4UN2gVP0xd1.3mSSZdsWDr/Pkb9UXr/gKq.MnUcLy7g6tCQ0HjpEq7b7FSMPEW9SyzsBN8pRZPODiY=")
-
+client._qrLogin("line://au/q/")
+#client._tokenLogin("token lu")
 profile, setting, tracer = client.getProfile(), client.getSettings(), LineTracer(client)
 offbot, messageReq, wordsArray, waitingAnswer = [], {}, {}, {}
 
